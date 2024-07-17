@@ -1,1 +1,1 @@
-## Background Color Chnager React App 
+## Background Color Changer React App 
