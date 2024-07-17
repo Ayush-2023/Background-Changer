@@ -1,0 +1,33 @@
+:root {
+    --border-width: 8px;
+    --border-radius: 8px;
+}
+
+.card {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: #fff;
+    position: relative;
+    padding: 0px;
+    border-left-color: yellow;
+    border-left-width: var(--border-width);
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.card-content {
+    padding: 0 8px;
+}
+
+.remove-before::before {
+    content: '';
+    display: none;
+}
